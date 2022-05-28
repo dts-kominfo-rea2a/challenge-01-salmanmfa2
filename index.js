@@ -1,12 +1,10 @@
 // TODO: Buatlah data dari kedua user di sini
 // Tentukan tipe data dan struktur data yang menurut kalian tepat
-// Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
+// Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca\
 
-let colorSetFirst = new Set();
-colorSetFirst.add("Yellow");
-colorSetFirst.add("Pink");
-colorSetFirst.add("White");
-colorSetFirst.add("Purple");
+const colorArrayFirst = [ 
+    "Yellow", "Pink","White","Purple"
+];
 
 let eduSetFirst = new Set();
 let schoolSetFirst1 = {
@@ -28,17 +26,21 @@ eduSetFirst.add(schoolSetFirst2);
 eduSetFirst.add(schoolSetFirst3);
 
 let restoSetFirst = new Set();
-restoSetFirst.add('Bento');
-restoSetFirst.add('Sushi');
-restoSetFirst.add('Pancake');
-restoSetFirst.add('Eggy');
-restoSetFirst.add('Tempura');
-restoSetFirst.add('Bento');
-restoSetFirst.add('Eggy');
-restoSetFirst.add('Padang');
-restoSetFirst.add('Tteok');
-restoSetFirst.add('Sushi');
-restoSetFirst.add('Sushi');
+const restoArrayFirst = [
+    "Bento",
+    "Sushi",
+    "Pancake",
+    "Tempura",
+    "Bento",
+    "Eggy",
+    "Padang",
+    "Tteok",
+    "Sushi",
+    "Sushi"
+
+];
+restoSetFirst.add(restoArrayFirst);
+
 
 
 const firstUser = {
@@ -46,17 +48,16 @@ const firstUser = {
     gender : "Female",
     age : 17,
     email :"monica@dingdong.com",
-    favoriteColor : colorSetFirst,
+    favoriteColor : colorArrayFirst,
     isHavePet : "Yes",
     education : eduSetFirst,
     favoriteResto : restoSetFirst
 
 };
 
-let colorSetSecond = new Set();
-colorSetSecond.add("Blue");
-colorSetSecond.add("Black");
-colorSetSecond.add("Grey");
+const colorArraySecond = [
+    "Blue","Black","Grey"
+];
 
 let eduSetSecond = new Set();
 let schoolSetSecond1 = {
@@ -85,22 +86,25 @@ eduSetSecond.add(schoolSetSecond3);
 eduSetSecond.add(schoolSetSecond4);
 
 let restoSetSecond = new Set();
-restoSetSecond.add('Tempura');
-restoSetSecond.add('Bento');
-restoSetSecond.add('Sushi');
-restoSetSecond.add('Pancake');
-restoSetSecond.add('Padang');
-restoSetSecond.add('Katsu');
-restoSetSecond.add('Geprek');
-restoSetSecond.add('Pancake');
-restoSetSecond.add('Eggy');
+const restoArraySecond =[
+    "Tempura",
+    "Bento",
+    "Sushi",
+    "Pancake",
+    "Padang",
+    "Katsu",
+    "Geprek",
+    "Pancake",
+    "Eggy"
+];
+restoSetSecond.add(restoArraySecond);
 
 const secondUser = {
     name : "Wendy",
     gender : "Male",
     age: 23,
     email : "wendy@dingdong.com",
-    favoriteColor : colorSetSecond,
+    favoriteColor : colorArraySecond,
     isHavePet : "No",
     education : eduSetSecond,
     favoriteResto : restoSetSecond,
